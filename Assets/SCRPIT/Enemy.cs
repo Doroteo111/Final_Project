@@ -13,6 +13,11 @@ public class Enemy : MonoBehaviour
     private NavMeshAgent _agent;
     private Animator _animator;
 
+    //LIVES AND DAMAGE //*********************************************
+   
+    private int slimeLives = 2;
+    private float slimeDamge = 1f;
+
     private float visionRange = 3.5f;
     private float attackRange = 2f;
 
@@ -107,6 +112,14 @@ public class Enemy : MonoBehaviour
             _playerController.lives--;
             canAttack = false;
             StartCoroutine(AttackCoolDown());
+        }
+    }
+
+    private void GameOver() //*********************************************
+    {
+        if (slimeLives <= 0)
+        {
+           // _animator.SetBool("isGameOver_S"); ERROR
         }
     }
 

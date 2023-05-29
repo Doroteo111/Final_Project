@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    private float verticalInput; //movment
+    //movment
+    private float verticalInput;
     private float moveSpeed;
-    public float turnSpeed = 60f; //speed
+
+    //speed
     public float walkSpeed = 8f;
     public float runSpeed= 10f;
 
@@ -20,11 +22,13 @@ public class PlayerController : MonoBehaviour
     private Rigidbody _rigidbody;
     private Animator _animator;
 
+    //powerups
     public bool hasPowerupLife;
     public int lives = 3;
+    public float timer = 0;
+    //UI
     public TextMeshProUGUI counterText;
     public TextMeshProUGUI livesText;
-    public float timer = 0;
     public TextMeshProUGUI _timer;
     public GameObject winPanel;
     //public GameObject winPanelLevel2;
@@ -150,8 +154,18 @@ public class PlayerController : MonoBehaviour
         ChooseRandomSFX(attackSounds);
     }
 
-  
+    private void TakeDamage()
+    {
+        lives = 3;
+    }
 
+    private void GameOver()
+    {
+        if(lives <= 0)
+        {
+            //_animator.SetBool("Death");
+        }
+    }
 
     private void ChooseRandomSFX(AudioClip[] sounds)
     {

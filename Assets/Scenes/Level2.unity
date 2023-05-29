@@ -11380,6 +11380,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38924336, y: 1.3304198, z: 0.075077206}
   m_Center: {x: 0.00000013475967, y: -0.49534166, z: 0.00000017904463}
+--- !u!114 &339941396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339941390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f71d620677f9ac4dbb8130cb8f5b907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swordCollider: {fileID: 0}
 --- !u!1001 &341429296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37645,6 +37658,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 246936035}
     m_Modifications:
+    - target: {fileID: 402068620, guid: 55776efecb0cd134ea5f418c2f97a705, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1919012471076396, guid: 55776efecb0cd134ea5f418c2f97a705, type: 3}
       propertyPath: m_Name
       value: SlimePBR (1)
