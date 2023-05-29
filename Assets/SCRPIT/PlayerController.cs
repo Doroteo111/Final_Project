@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
             swordCollider.enabled = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && isOnTheGround ) //salto con el espacio y no podré saltar si es gameover(MUERTO)
+        if (Input.GetKeyDown(KeyCode.Space) && isOnTheGround ) //salto con el espacio 
         {
             Jump();
         }

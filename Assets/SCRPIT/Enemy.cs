@@ -31,8 +31,8 @@ public class Enemy : MonoBehaviour
 
     private float timeBetweenAttacks = 2f;
     private bool canAttack;
-    private float upAttackForce = 15f;
-    private float forwardAttackForce = 18f;
+   //private float upAttackForce = 15f;
+    //private float forwardAttackForce = 18f;
 
     private void Awake()
     {
